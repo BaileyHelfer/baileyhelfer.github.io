@@ -11,6 +11,7 @@
   <style>body { font-family: 'Inter', sans-serif; }</style>
 </head>
 <body class="bg-gray-900 text-gray-100">
+
   <!-- Header -->
   <header class="fixed w-full bg-gray-900 bg-opacity-50 backdrop-blur z-50">
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
@@ -30,21 +31,41 @@
   <section class="h-screen flex items-center bg-gradient-to-br from-blue-800 to-indigo-900">
     <div class="container mx-auto px-6 text-center md:text-left">
       <h1 class="text-5xl font-bold mb-4">Split Detection System</h1>
-      <p class="text-xl text-gray-400 mb-6">Real-time detection for sheet metal splits, achieving &gt;98% accuracy at up to 120 FPS.</p>
-      <a href="../index.html#projects" class="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg transition">← Back to Home</a>
+      <p class="text-xl text-gray-400 mb-6">Industrial-grade vision pipeline detecting sheet-metal splits in real time at high throughput.</p>
+      <a href="../index.html#projects" class="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg transition">
+        ← Back to Home
+      </a>
     </div>
   </section>
 
-  <!-- Details -->
+  <!-- Overview -->
   <section class="py-20">
     <div class="container mx-auto px-6 space-y-6">
       <h2 class="text-3xl font-bold">Overview</h2>
-      <p class="text-gray-400">Designed and deployed a distributed vision pipeline using 12+ high-resolution GigE cameras, Dockerized inference workers, and PostgreSQL tracking. Integrated AI models in PyTorch for split detection with real-time performance.</p>
-      <h3 class="text-2xl font-semibold">Key Features</h3>
+      <p class="text-gray-300">
+        Engineered a scalable, ZeroMQ-based pipeline to capture, process, and classify 12MP+ high-resolution GigE camera feeds across multiple production lines. Achieved sustained processing rates over 100 FPS with over 98% split detection accuracy.
+      </p>
+
+      <!-- <h3 class="text-2xl font-semibold mt-8">Architecture</h3>
       <ul class="list-disc list-inside text-gray-300 space-y-2">
-        <li>Modular ZMQ-based broker/workers/collector architecture</li>
-        <li>Custom data ingestion and result storage</li>
-        <li>Real-time image streaming at 120 FPS</li>
+        <li><strong>Trigger Module:</strong> Monitors belt sensors and instantiates capture events.</li>
+        <li><strong>Broker & Workers:</strong> Distributes high-resolution frames to GPU-accelerated inference nodes.</li>
+        <li><strong>Results Collector:</strong> Aggregates detections, stores images & defect data in PostgreSQL.</li>
+      </ul> -->
+
+      <h3 class="text-2xl font-semibold mt-8">Tech Stack</h3>
+      <div class="flex flex-wrap gap-4 text-gray-300">
+        <span class="bg-gray-800 px-4 py-2 rounded-full">Python</span>
+        <span class="bg-gray-800 px-4 py-2 rounded-full">ZeroMQ</span>
+        <span class="bg-gray-800 px-4 py-2 rounded-full">Docker / Compose</span>
+        <span class="bg-gray-800 px-4 py-2 rounded-full">PostgreSQL</span>
+        <span class="bg-gray-800 px-4 py-2 rounded-full">PyTorch & OpenCV</span>
+      </div>
+
+      <h3 class="text-2xl font-semibold mt-8">Performance & Impact</h3>
+      <ul class="list-disc list-inside text-gray-300 space-y-2">
+        <li>Processed over 5 million frames in production deployments.</li>
+        <li>Modular design enables rapid integration at new manufacturing sites.</li>
       </ul>
     </div>
   </section>
@@ -52,7 +73,7 @@
   <!-- Footer -->
   <footer class="bg-gray-900 py-6">
     <div class="container mx-auto px-6 text-center text-gray-500">
-      <a href="https://github.com/BaileyHelfer" target="_blank" class="hover:text-green-400">GitHub</a>
+      <a href="https://github.com/BaileyHelfer" target="_blank" class="hover:text-green-400">My GitHub</a>
       <span class="mx-4">|</span>
       <a href="https://linkedin.com/in/bailey-helfer" target="_blank" class="hover:text-green-400">LinkedIn</a>
     </div>
@@ -65,4 +86,3 @@
   </script>
 </body>
 </html>
-
