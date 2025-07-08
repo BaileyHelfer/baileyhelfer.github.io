@@ -1,0 +1,97 @@
+<!-- File: projects/client-portal.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Client Portal | Bailey Helfer</title>
+  <link rel="icon" href="../img/icon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>body { font-family: 'Inter', sans-serif; }</style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+  <!-- Header -->
+  <header class="fixed w-full bg-gray-900 bg-opacity-50 backdrop-blur z-50">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="../index.html" class="text-2xl font-bold">Bailey Helfer</a>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="../index.html#projects" class="hover:text-green-400">Back to Projects</a></li>
+      </ul>
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="h-screen flex items-center bg-gradient-to-br from-green-800 to-teal-900">
+    <div class="container mx-auto px-6 text-center md:text-left">
+      <h1 class="text-5xl font-bold mb-4">Client Portal</h1>
+      <p class="text-xl text-gray-400 mb-6">A React & FastAPI dashboard for real-time monitoring and management of vision system data with millions of records.</p>
+      <a href="../index.html#projects" class="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg transition">← Back to Home</a>
+    </div>
+  </section>
+
+  <!-- Details -->
+  <section class="py-20">
+    <div class="container mx-auto px-6 space-y-6">
+      <h2 class="text-3xl font-bold">Overview</h2>
+      <p class="text-gray-400">Built a full-stack portal using React, Tailwind CSS, and FastAPI for industrial vision systems. Designed for clients and internal teams to manage, monitor, and analyze real-time data streams.</p>
+
+      <h3 class="text-2xl font-semibold mt-6">Core Components</h3>
+      <ul class="list-disc list-inside text-gray-300 space-y-2">
+        <li><strong>Dataset Management</strong>: Upload, tag, and organize image datasets for training and analysis.</li>
+        <li><strong>System Management</strong>: Monitor camera and server health, logs, and performance metrics in real time.</li>
+        <li><strong>Model Management</strong>: Deploy, version, and evaluate AI/ML models with performance dashboards.</li>
+      </ul>
+
+      <h3 class="text-2xl font-semibold mt-6">Key Features</h3>
+      <ul class="list-disc list-inside text-gray-300 space-y-2">
+        <li>Dynamic filtering and search for quick data access</li>
+        <li>Real-time statistics and alerts using WebSocket integrations</li>
+        <li>Image gallery with defect overlays and export options</li>
+        <li>Secure JWT-based authentication and role-based permissions</li>
+      </ul>
+
+      <h3 class="text-2xl font-semibold mt-6">Architecture & Tech Stack</h3>
+      <ul class="list-disc list-inside text-gray-300 space-y-2">
+        <li><strong>Front-End</strong>: React, Tailwind CSS, Ant Design components</li>
+        <li><strong>Back-End</strong>: FastAPI, PostgreSQL, SQLAlchemy</li>
+        <li><strong>Real-Time</strong>: WebSockets for live data updates</li>
+        <li><strong>Deployment</strong>: Docker Compose, CI/CD pipelines</li>
+      </ul>
+
+      <h3 class="text-2xl font-semibold mt-6">User Interface & UX</h3>
+      <p class="text-gray-400">Designed in dark mode with a grey base and light blue accents for reduced eye strain and intuitive navigation.</p>
+
+      <h3 class="text-2xl font-semibold mt-6">Future Plans</h3>
+      <ul class="list-disc list-inside text-gray-300 space-y-2">
+        <li>Client-specific dashboards and custom reporting</li>
+        <li>Role-based access controls and audit logging</li>
+        <li>Integration with external data sources (e.g., PLCs, ERP)</li>
+      </ul>
+
+      <h3 class="text-2xl font-semibold mt-6">Source Code</h3>
+      <p class="text-gray-400"><a href="https://github.com/BaileyHelfer/client-portal" target="_blank" class="text-green-400 hover:underline">View on GitHub</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-6">
+    <div class="container mx-auto px-6 text-center text-gray-500">
+      <a href="https://github.com/BaileyHelfer" target="_blank" class="hover:text-green-400">My GitHub</a>
+      <span class="mx-4">|</span>
+      <a href="https://linkedin.com/in/bailey-helfer" target="_blank" class="hover:text-green-400">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const nav = document.querySelector('nav ul');
+    btn.addEventListener('click', () => nav.classList.toggle('hidden'));
+  </script>
+</body>
+</html>

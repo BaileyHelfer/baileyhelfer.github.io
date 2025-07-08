@@ -1,0 +1,12 @@
+Dear Hiring Manager,
+
+I’m really excited to apply for the Software Engineer II role at Fanatics Betting & Gaming. I love the idea of building backend systems that help fans get closer to the sports they’re passionate about. The way you’re blending technology with fan engagement is something I’d love to be part of.
+
+Right now, I’m a Lead Software Engineer at USS Vision where I’ve spent the past few years building real-time vision and analytics systems. I’ve worked on backend services using Python and Flask, built microservices, set up CI/CD pipelines with Docker and GitHub, and managed PostgreSQL databases. I’ve also been part of on-call rotations, handled production issues, and collaborated closely with teammates to get projects over the finish line. I enjoy working through backend challenges, optimizing performance, and making sure systems are reliable and scalable.
+
+What really draws me to this role is the chance to combine two things I’m passionate about—building backend systems and working in the sports space. I’m excited to keep learning, contribute to something that fans use and love, and grow with a team that’s pushing forward quickly.
+
+Thanks for taking the time to consider my application. I’d love the chance to chat more about how I can contribute to the team at Fanatics Betting & Gaming.
+
+Sincerely,
+Bailey Helfer

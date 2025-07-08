@@ -1,0 +1,101 @@
+<!-- File: projects/vr-wheelchair.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VR Wheelchair Soccer | Bailey Helfer</title>
+  <link rel="icon" href="../img/icon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>body { font-family: 'Inter', sans-serif; }</style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+  <!-- Header -->
+  <header class="fixed w-full bg-gray-900 bg-opacity-50 backdrop-blur z-50">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="../index.html" class="text-2xl font-bold">Bailey Helfer</a>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="../index.html#projects" class="hover:text-green-400">Back to Projects</a></li>
+      </ul>
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="h-screen flex items-center bg-gradient-to-br from-purple-800 to-pink-900">
+    <div class="container mx-auto px-6 text-center md:text-left">
+      <h1 class="text-5xl font-bold mb-4">VR Wheelchair Soccer</h1>
+      <p class="text-xl text-gray-400 mb-6">An Unreal Engine VR game with AI-driven opponents for Oculus Quest 2, using Blueprints and C++.</p>
+      <a href="../index.html#projects" class="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg transition">
+        ← Back to Home
+      </a>
+    </div>
+  </section>
+
+  <!-- Details -->
+  <section class="py-20">
+    <div class="container mx-auto px-6 space-y-6">
+      <h2 class="text-3xl font-bold">Overview</h2>
+      <p class="text-gray-400">
+        Developed a full VR soccer experience featuring adaptive AI players, physics-based interactions, and intuitive controls optimized for VR immersion.
+      </p>
+
+      <h3 class="text-2xl font-semibold">Key Features</h3>
+      <ul class="list-disc list-inside text-gray-300 space-y-2">
+        <li>Dynamic AI behavior with behavior trees</li>
+        <li>Hand-tracked ball control and physics</li>
+        <li>Optimized for Oculus Quest 2 performance</li>
+      </ul>
+
+      <h3 class="text-2xl font-semibold mt-8">Game Basics</h3>
+      <ul class="list-disc list-inside text-gray-300 space-y-2">
+        <li>Hook up your Oculus VR headset to a PC and launch the game</li>
+        <li>Choose between a tutorial or singleplayer match against AI</li>
+        <li>Navigate in your wheelchair using gestures for braking, turning, and moving</li>
+        <li>Knock around the ball to score in the net</li>
+        <li>Stay seated—tipping over is possible due to realistic physics</li>
+      </ul>
+
+      <h3 class="text-2xl font-semibold mt-8">Technologies Used</h3>
+      <ul class="list-disc list-inside text-gray-300 space-y-2">
+        <li>Unreal Engine 4 – Blueprints &amp; C++ for game mechanics</li>
+        <li>Oculus Quest 2 – headset for development and testing</li>
+      </ul>
+
+      <h3 class="text-2xl font-semibold mt-8">Future Plans</h3>
+      <ul class="list-disc list-inside text-gray-300 space-y-2">
+        <li>Add multiplayer matches against other players online</li>
+        <li>Revamp the user interface for greater intuitiveness</li>
+        <li>Expand with additional maps and game modes</li>
+      </ul>
+
+      <h3 class="text-2xl font-semibold mt-8">Source Code</h3>
+      <p class="text-gray-400">
+        <a href="https://github.com/ajatucker/vr-wheelchair-soccer" target="_blank" class="text-green-400 hover:underline">
+          View on GitHub
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-6">
+    <div class="container mx-auto px-6 text-center text-gray-500">
+      <a href="https://github.com/BaileyHelfer" target="_blank" class="hover:text-green-400">My GitHub</a>
+      <span class="mx-4">|</span>
+      <a href="https://linkedin.com/in/bailey-helfer" target="_blank" class="hover:text-green-400">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const nav = document.querySelector('nav ul');
+    btn.addEventListener('click', () => nav.classList.toggle('hidden'));
+  </script>
+</body>
+</html>

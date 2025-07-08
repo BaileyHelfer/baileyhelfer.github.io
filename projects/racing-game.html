@@ -1,0 +1,92 @@
+<!-- File: projects/racing-game.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3D Racing Game | Bailey Helfer</title>
+  <link rel="icon" href="../img/icon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>body { font-family: 'Inter', sans-serif; }</style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+  <!-- Header -->
+  <header class="fixed w-full bg-gray-900 bg-opacity-50 backdrop-blur z-50">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="../index.html" class="text-2xl font-bold">Bailey Helfer</a>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="../index.html#projects" class="hover:text-green-400">Back to Projects</a></li>
+      </ul>
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="h-screen flex items-center bg-gradient-to-br from-yellow-800 to-red-900">
+    <div class="container mx-auto px-6 text-center md:text-left">
+      <h1 class="text-5xl font-bold mb-4">3D Racing Game</h1>
+      <p class="text-xl text-gray-400 mb-6">Fast-paced Unity racing action against a challenging AI—be the first to cross the finish line!</p>
+      <a href="../index.html#projects" class="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg transition">
+        ← Back to Home
+      </a>
+    </div>
+  </section>
+
+  <!-- Details -->
+  <section class="py-20">
+    <div class="container mx-auto px-6 space-y-8">
+      <h2 class="text-3xl font-bold">Overview</h2>
+      <p class="text-gray-400">
+        Welcome to the 3D Racing Game! Created for Game Design 1 at University of Michigan-Dearborn, this Unity-powered experience features realistic car physics, boost mechanics, and competitive AI races—complete a lap to claim victory.
+      </p>
+
+      <h3 class="text-2xl font-semibold">Features</h3>
+      <ul class="list-disc list-inside text-gray-300 space-y-2">
+        <li>Realistic car physics with drifts around turns</li>
+        <li>Boost function for extra bursts of speed</li>
+        <li>Challenging AI opponent for competitive races</li>
+        <li>Beautiful 3D graphics and immersive sound effects</li>
+      </ul>
+
+      <h3 class="text-2xl font-semibold">How to Play</h3>
+      <ul class="list-disc list-inside text-gray-300 space-y-2">
+        <li>Download and run the game on your PC</li>
+        <li>Use arrow keys or WASD to control your car</li>
+        <li>Hold <kbd class="px-1 bg-gray-800 rounded">Shift</kbd> to drift and <kbd class="px-1 bg-gray-800 rounded">Space</kbd> to boost</li>
+        <li>Stay on track, avoid obstacles, and finish one lap first to win</li>
+      </ul>
+
+      <h3 class="text-2xl font-semibold">Contributions</h3>
+      <p class="text-gray-400">
+        Contributions are welcome! Fork the repository, make your changes, and submit a pull request to add new features or improvements.
+      </p>
+      <h3 class="text-2xl font-semibold mt-8">Source Code</h3>
+      <p class="text-gray-400">
+        <a href="https://github.com/BaileyHelfer/CIS487-3DGame" target="_blank" class="text-green-400 hover:underline">
+          View on GitHub
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-6">
+    <div class="container mx-auto px-6 text-center text-gray-500">
+      <a href="https://github.com/BaileyHelfer" target="_blank" class="hover:text-green-400">My GitHub</a>
+      <span class="mx-4">|</span>
+      <a href="https://linkedin.com/in/bailey-helfer" target="_blank" class="hover:text-green-400">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const nav = document.querySelector('nav ul');
+    btn.addEventListener('click', () => nav.classList.toggle('hidden'));
+  </script>
+</body>
+</html>
