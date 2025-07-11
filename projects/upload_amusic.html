@@ -16,7 +16,7 @@
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
       <a href="../index.html" class="text-2xl font-bold">Bailey Helfer</a>
       <ul class="hidden md:flex space-x-6">
-        <li><a href="../index.html#projects" class="hover:text-green-400">Back to Projects</a></li>
+        <li><a href="../index.html#projects" class="hover:text-green-400">← Back to Projects</a></li>
       </ul>
       <button id="menu-btn" class="md:hidden focus:outline-none">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -37,12 +37,30 @@
     </div>
   </section>
 
-  <!-- Details -->
+  <!-- Gallery Section -->
+  <section class="py-20 bg-gray-800">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-8">Gallery</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="w-full aspect-video overflow-hidden rounded-lg shadow-lg bg-gray-700">
+          <img src="../img/amusic.JPG" alt="screenshot 1" class="w-full h-full object-contain" />
+        </div>
+        <div class="w-full aspect-video overflow-hidden rounded-lg shadow-lg bg-gray-700">
+          <img src="../img/apple-music-logo.png" alt="Apple music" class="w-full h-full object-contain" />
+        </div>
+        <div class="w-full aspect-video overflow-hidden rounded-lg shadow-lg bg-gray-700">
+          <img src="../img/amusic_2.JPG" alt="screenshot 2" class="w-full h-full object-contain" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Details Section -->
   <section class="py-20">
     <div class="container mx-auto px-6 space-y-8">
       <h2 class="text-3xl font-bold">Overview</h2>
       <p class="text-gray-400">
-        A personal Flask-based web service using Python and AppleScript. Run a local server on macOS, access from any device, paste a SoundCloud or YouTube URL, and automatically download and upload the track to your Apple Music library.
+        A personal Flask-based web service that leverages SoundCloud and YouTube download APIs and macOS AppleScript to automate music ingestion into Apple Music. Accessible from any device on your local network, this tool streamlines capturing and uploading your favorite tracks.
       </p>
 
       <h3 class="text-2xl font-semibold">Project Structure</h3>
@@ -51,7 +69,7 @@
         <li><strong>config.yaml</strong>: Application settings</li>
         <li><strong>templates/</strong>: Jinja2 HTML templates for the UI</li>
         <li><strong>static/</strong>: CSS &amp; JavaScript assets</li>
-        <li><strong>script.applescript</strong>: Automates Apple Music upload on macOS</li>
+        <li><strong>script.applescript</strong>: Automates Music app upload on macOS</li>
         <li><strong>requirements.txt</strong>: Python dependencies</li>
       </ul>
 
@@ -67,24 +85,22 @@
 
       <h3 class="text-2xl font-semibold">Challenges</h3>
       <p class="text-gray-400">
-        Apple Music does not provide an official API for automating library uploads. The only way to add tracks programmatically is via macOS AppleScript when the user is already signed into the Music app—an imperfect but effective workaround.
+        With no official API for Apple Music uploads, macOS AppleScript provided the only reliable path—albeit a workaround—requiring user login in the Music app.
       </p>
 
       <h3 class="text-2xl font-semibold">Inspiration</h3>
       <p class="text-gray-400">
-        I wanted a simpler way to add unreleased or streamed music to my Apple Music library without manually downloading and dragging files. This tool streamlines that process directly from SoundCloud or YouTube links.
+        I wanted a seamless way to save streamed music into my personal library without manual downloads and file transfers. This service automates that flow end-to-end.
       </p>
 
       <h3 class="text-2xl font-semibold">Contributing</h3>
       <p class="text-gray-400">
-        Fork the repo, submit issues or pull requests. Contributions welcomed! Project is MIT licensed.
+        Fork the repo, open issues or pull requests—MIT licensed and open to community improvements.
       </p>
 
       <h3 class="text-2xl font-semibold">Source Code</h3>
       <p class="text-gray-400">
-        <a href="https://github.com/BaileyHelfer/upload_amusic" target="_blank" class="text-green-400 hover:underline">
-          View on GitHub
-        </a>
+        <a href="https://github.com/BaileyHelfer/upload_amusic" target="_blank" class="text-green-400 hover:underline">View on GitHub</a>
       </p>
     </div>
   </section>

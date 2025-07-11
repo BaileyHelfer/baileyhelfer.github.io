@@ -17,7 +17,7 @@
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
       <a href="../index.html" class="text-2xl font-bold">Bailey Helfer</a>
       <ul class="hidden md:flex space-x-6">
-        <li><a href="../index.html#projects" class="hover:text-green-400">Back to Projects</a></li>
+        <li><a href="../index.html#projects" class="hover:text-green-400">← Back to Projects</a></li>
       </ul>
       <button id="menu-btn" class="md:hidden focus:outline-none">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -38,35 +38,50 @@
     </div>
   </section>
 
-  <!-- Overview -->
+  <!-- Gallery Section -->
+  <section class="py-20 bg-gray-800">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-6">Gallery</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="w-full aspect-video overflow-hidden rounded-lg shadow-lg bg-gray-700">
+          <img src="../img/gige.png" alt="GigE Camera" class="w-full h-full object-contain" />
+        </div>
+        <div class="w-full aspect-video overflow-hidden rounded-lg shadow-lg bg-gray-700">
+          <img src="../img/split.png" alt="Example Split" class="w-full h-full object-contain" />
+        </div>
+        <div class="w-full aspect-video overflow-hidden rounded-lg shadow-lg bg-gray-700">
+          <img src="../img/docker.png" alt="Docker Compose Architecture" class="w-full h-full object-contain" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Details Section -->
   <section class="py-20">
-    <div class="container mx-auto px-6 space-y-6">
+    <div class="container mx-auto px-6 space-y-8">
       <h2 class="text-3xl font-bold">Overview</h2>
-      <p class="text-gray-300">
-        Engineered a scalable, ZeroMQ-based pipeline to capture, process, and classify 12MP+ high-resolution GigE camera feeds across multiple production lines. Achieved sustained processing rates over 100 FPS with over 98% split detection accuracy.
+      <p class="text-gray-400">
+        Built a scalable, distributed vision system leveraging Python, PyTorch, and high-resolution GigE camera streams. Containerized each component with Docker Compose and orchestrated an asynchronous ZeroMQ pipeline to achieve real-time split classification across multiple production lines. Developed modular services to reliably detect metal splits with 98%+ accuracy, and learned to architect robust distributed systems under real-time constraints.
       </p>
 
-      <!-- <h3 class="text-2xl font-semibold mt-8">Architecture</h3>
+      <h3 class="text-2xl font-semibold">Key Features</h3>
       <ul class="list-disc list-inside text-gray-300 space-y-2">
-        <li><strong>Trigger Module:</strong> Monitors belt sensors and instantiates capture events.</li>
-        <li><strong>Broker & Workers:</strong> Distributes high-resolution frames to GPU-accelerated inference nodes.</li>
-        <li><strong>Results Collector:</strong> Aggregates detections, stores images & defect data in PostgreSQL.</li>
-      </ul> -->
+        <li>Real-time split classification at 100+ frames per second.</li>
+        <li>Asynchronous messaging with fault tolerance.</li>
+        <li>Modular microservices architecture in Docker containers.</li>
+        <li>Automated data logging and analytics integration.</li>
+      </ul>
 
-      <h3 class="text-2xl font-semibold mt-8">Tech Stack</h3>
+      <h3 class="text-2xl font-semibold">Tech Stack</h3>
       <div class="flex flex-wrap gap-4 text-gray-300">
         <span class="bg-gray-800 px-4 py-2 rounded-full">Python</span>
-        <span class="bg-gray-800 px-4 py-2 rounded-full">ZeroMQ</span>
-        <span class="bg-gray-800 px-4 py-2 rounded-full">Docker / Compose</span>
-        <span class="bg-gray-800 px-4 py-2 rounded-full">PostgreSQL</span>
-        <span class="bg-gray-800 px-4 py-2 rounded-full">PyTorch & OpenCV</span>
+        <span class="bg-gray-800 px-4 py-2 rounded-full">PyTorch</span>
+        <span class="bg-gray-800 px-4 py-2 rounded-full">GigE Cameras</span>
+        <span class="bg-gray-800 px-4 py-2 rounded-full">Docker Compose</span>
       </div>
 
-      <h3 class="text-2xl font-semibold mt-8">Performance & Impact</h3>
-      <ul class="list-disc list-inside text-gray-300 space-y-2">
-        <li>Processed over 5 million frames in production deployments.</li>
-        <li>Modular design enables rapid integration at new manufacturing sites.</li>
-      </ul>
+      <h3 class="text-2xl font-semibold">Source Code</h3>
+      <p class="text-gray-400"><a href="#" class="text-green-400 hover:underline">Unavailable</a></p>
     </div>
   </section>
 

@@ -16,7 +16,7 @@
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
       <a href="../index.html" class="text-2xl font-bold">Bailey Helfer</a>
       <ul class="hidden md:flex space-x-6">
-        <li><a href="../index.html#projects" class="hover:text-green-400">Back to Projects</a></li>
+        <li><a href="../index.html#projects" class="hover:text-green-400">← Back to Projects</a></li>
       </ul>
       <button id="menu-btn" class="md:hidden focus:outline-none">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -30,8 +30,26 @@
   <section class="h-screen flex items-center bg-gradient-to-br from-indigo-800 to-teal-700">
     <div class="container mx-auto px-6 text-center md:text-left">
       <h1 class="text-5xl font-bold mb-4">SugarScope AI</h1>
-      <p class="text-xl text-gray-300 mb-6">Real-time image classification via RTSP streams using Microsoft Lobe & ONNX models.</p>
+      <p class="text-xl text-gray-300 mb-6">Real-time image classification via RTSP streams using Microsoft Lobe AI–trained ONNX models.</p>
       <a href="../index.html#projects" class="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg transition">← Back to Home</a>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="py-20 bg-gray-800">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-8">Gallery</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="w-full aspect-video overflow-hidden rounded-lg shadow-lg bg-gray-700">
+          <img src="../img/preview.png" alt="RTSP Stream View" class="w-full h-full object-contain" />
+        </div>
+        <div class="w-full aspect-video overflow-hidden rounded-lg shadow-lg bg-gray-700">
+          <img src="../img/sugarscope_gif.gif" alt="Live Inference GIF" class="w-full h-full object-contain" />
+        </div>
+        <div class="w-full aspect-video overflow-hidden rounded-lg shadow-lg bg-gray-700">
+          <img src="../img/lobe.png" alt="Lobe AI Interface" class="w-full h-full object-contain" />
+        </div>
+      </div>
     </div>
   </section>
 
@@ -40,7 +58,7 @@
     <div class="container mx-auto px-6 space-y-8">
       <h2 class="text-3xl font-bold">Background</h2>
       <p class="text-gray-400">
-        SugarScope AI is a machine learning application delivering real-time image classification predictions. It leverages Microsoft's Lobe backend and ONNX models to infer from live RTSP camera feeds.
+        SugarScope AI is a machine learning application delivering real-time image classification predictions. We used Microsoft Lobe AI to train and export ONNX models, which are then deployed to infer from live RTSP camera feeds.
       </p>
 
       <h3 class="text-2xl font-semibold">Features</h3>
@@ -69,7 +87,7 @@
       <ul class="list-disc list-inside text-gray-300 space-y-2">
         <li>RTSP streaming requires careful buffer management</li>
         <li>Tkinter provides a lightweight GUI solution</li>
-        <li>Microsoft Lobe simplifies ONNX-based inference</li>
+        <li>Microsoft Lobe AI simplifies model training and ONNX export</li>
       </ul>
 
       <h3 class="text-2xl font-semibold">Source Code</h3>

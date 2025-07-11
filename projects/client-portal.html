@@ -16,7 +16,7 @@
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
       <a href="../index.html" class="text-2xl font-bold">Bailey Helfer</a>
       <ul class="hidden md:flex space-x-6">
-        <li><a href="../index.html#projects" class="hover:text-green-400">Back to Projects</a></li>
+        <li><a href="../index.html#projects" class="hover:text-green-400">← Back to Projects</a></li>
       </ul>
       <button id="menu-btn" class="md:hidden focus:outline-none">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -31,7 +31,27 @@
     <div class="container mx-auto px-6 text-center md:text-left">
       <h1 class="text-5xl font-bold mb-4">Client Portal</h1>
       <p class="text-xl text-gray-400 mb-6">A React & FastAPI dashboard for real-time monitoring and management of vision system data with millions of records.</p>
-      <a href="../index.html#projects" class="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg transition">← Back to Home</a>
+      <a href="../index.html#projects" class="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg transition">
+        ← Back to Home
+      </a>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="py-20 bg-gray-800">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-8">Gallery</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="w-full aspect-video overflow-hidden rounded-lg shadow-lg bg-gray-700">
+          <img src="../img/react.png" alt="React Logo" class="w-full h-full object-contain" />
+        </div>
+        <div class="w-full aspect-video overflow-hidden rounded-lg shadow-lg bg-gray-700">
+          <img src="../img/dash.png" alt="Dashboard Example" class="w-full h-full object-contain" />
+        </div>
+        <div class="w-full aspect-video overflow-hidden rounded-lg shadow-lg bg-gray-700">
+          <img src="../img/fastapi.png" alt="FastAPI" class="w-full h-full object-contain" />
+        </div>
+      </div>
     </div>
   </section>
 
@@ -39,39 +59,43 @@
   <section class="py-20">
     <div class="container mx-auto px-6 space-y-6">
       <h2 class="text-3xl font-bold">Overview</h2>
-      <p class="text-gray-400">Built a full-stack portal using React, Tailwind CSS, and FastAPI for industrial vision systems. Designed for clients and internal teams to manage, monitor, and analyze real-time data streams.</p>
+      <p class="text-gray-400">
+        Built a full-stack client portal using React, Tailwind CSS, and FastAPI to empower industrial vision system users with real-time data insights. Designed for both clients and internal teams to seamlessly manage massive datasets, monitor system health, and streamline model workflows.
+      </p>
 
       <h3 class="text-2xl font-semibold mt-6">Core Components</h3>
       <ul class="list-disc list-inside text-gray-300 space-y-2">
-        <li><strong>Dataset Management</strong>: Upload, tag, and organize image datasets for training and analysis.</li>
-        <li><strong>System Management</strong>: Monitor camera and server health, logs, and performance metrics in real time.</li>
-        <li><strong>Model Management</strong>: Deploy, version, and evaluate AI/ML models with performance dashboards.</li>
+        <li><strong>Dataset Management</strong>: Upload, tag, and organize large image collections for training and analysis.</li>
+        <li><strong>System Management</strong>: Real-time health checks, performance metrics, and server logs dashboard.</li>
+        <li><strong>Model Management</strong>: Deploy, version, and evaluate ML models with rich performance charts.</li>
+        <li><strong>Image Explorer</strong>: Browse, search, and filter image gallery with overlay annotations.</li>
+        <li><strong>Inspection Assistant</strong>: Interactive workflow to identify and review missed detections for continuous improvement.</li>
       </ul>
 
       <h3 class="text-2xl font-semibold mt-6">Key Features</h3>
       <ul class="list-disc list-inside text-gray-300 space-y-2">
-        <li>Dynamic filtering and search for quick data access</li>
-        <li>Real-time statistics and alerts using WebSocket integrations</li>
-        <li>Image gallery with defect overlays and export options</li>
-        <li>Secure JWT-based authentication and role-based permissions</li>
+        <li>Dynamic filtering and search for instant data retrieval</li>
+        <li>WebSocket-powered live statistics and alert notifications</li>
+        <li>Interactive image gallery with overlay annotations and export options</li>
+        <li>Secure JWT authentication with granular role-based access control</li>
       </ul>
 
       <h3 class="text-2xl font-semibold mt-6">Architecture & Tech Stack</h3>
-      <ul class="list-disc list-inside text-gray-300 space-y-2">
-        <li><strong>Front-End</strong>: React, Tailwind CSS, Ant Design components</li>
-        <li><strong>Back-End</strong>: FastAPI, PostgreSQL, SQLAlchemy</li>
-        <li><strong>Real-Time</strong>: WebSockets for live data updates</li>
-        <li><strong>Deployment</strong>: Docker Compose, CI/CD pipelines</li>
-      </ul>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-gray-300">
+        <div><strong>Front-End</strong>: React, Tailwind CSS, Ant Design</div>
+        <div><strong>Back-End</strong>: FastAPI, PostgreSQL, SQLAlchemy</div>
+        <div><strong>Real-Time</strong>: WebSockets, async Python</div>
+        <div><strong>Deployment</strong>: Docker Compose, CI/CD pipelines</div>
+      </div>
 
       <h3 class="text-2xl font-semibold mt-6">User Interface & UX</h3>
-      <p class="text-gray-400">Designed in dark mode with a grey base and light blue accents for reduced eye strain and intuitive navigation.</p>
+      <p class="text-gray-400">Crafted in a dark-mode theme with a grey base and light-blue accents for reduced eye strain and intuitive navigation, ensuring a polished, professional look.</p>
 
       <h3 class="text-2xl font-semibold mt-6">Future Plans</h3>
       <ul class="list-disc list-inside text-gray-300 space-y-2">
-        <li>Client-specific dashboards and custom reporting</li>
-        <li>Role-based access controls and audit logging</li>
-        <li>Integration with external data sources (e.g., PLCs, ERP)</li>
+        <li>Custom client dashboards and advanced reporting widgets</li>
+        <li>Audit logging and extended role-based permissions</li>
+        <li>Integration with external systems (PLCs, ERP, cloud storage)</li>
       </ul>
 
       <h3 class="text-2xl font-semibold mt-6">Source Code</h3>
